@@ -1,0 +1,121 @@
+@import './normalize';
+
+$number: 60;
+
+@for $i from 1 through 10 {
+  .font-size-#{$i} {
+    font-size: #{$i}rem;
+  }
+}
+@for $i from 1 through 10 {
+  .margin-right-#{$i} {
+    margin-right: #{$i}rem;
+  }
+}
+@for $i from 1 through 10 {
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+}
+.text-center { 
+  text-align: center;
+}
+body {
+  font-family: 'Amatic SC', cursive;
+}
+.font-style-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+.display-none {
+  display: none;
+}
+.box {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+  color: #D5AD6D;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.box1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(34,56,48,1) 0%, rgba(60,115,89,1) 50%, rgba(34,56,48,1) 100%);
+  z-index: 999;
+}
+
+.flower-icon {
+  position: absolute;
+  width: auto;
+  height: 90%;
+  opacity: 1;
+}
+.decoration-class {
+  width: 50vw;
+  height: auto;
+}
+.decoration-rotate {
+  transform: rotate(180deg);
+}
+.center-left {
+  top: -20%;
+  left: 0;
+  height: 150%;
+  opacity: 0.2;
+  g {
+    fill:rgba(255, 255, 255, 0.493);
+  }
+}
+.center-right {
+  top: 5%;
+  right: -450px;
+}
+.sub-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.box2 {
+  position: relative;
+  display: flex;
+  .division {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .extra-details {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 2rem;
+      width: 80%;
+      height: 80%;
+      background: linear-gradient(90deg, rgba(34,56,48,1) 0%, rgba(60,115,89,1) 50%, rgba(34,56,48,1) 100%);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+  }
+}
+.box2-column {
+  flex-direction: column;
+  .division {
+    width: 100vw;
+  }
+}
+.box2-row {
+  flex-direction: row;
+  .division {
+    width: 50vw;
+  }
+}
